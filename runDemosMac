@@ -1,0 +1,21 @@
+#!/bin/tcsh
+
+setenv dir `uname -ms | sed -e s"/ /_/g"`
+
+${macdir}/CubeMap/CubeMap
+${macdir}/DepthMapShadows/DepthMapShadows
+${macdir}/DepthOffset/DepthOffset
+${macdir}/Extensions/Extensions
+${macdir}/Materials/Materials
+${macdir}/Picking/Picking
+${macdir}/PixelRectangles/PixelRectangles
+${macdir}/Platform/Platform
+${macdir}/ProjectedShadows/ProjectedShadows
+${macdir}/SecondaryColor/SecondaryColor
+${macdir}/SimpleExample/SimpleExample
+${macdir}/SimpleLighting/SimpleLighting
+${macdir}/SimpleTextureMapping/SimpleTextureMapping
+${macdir}/TextureMapping/TextureMapping
+${macdir}/Transformation/Transformation
+${macdir}/VertexArray/VertexArray
+${macdir}/Viewing/Viewing

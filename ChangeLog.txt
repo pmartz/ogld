@@ -1,0 +1,15 @@
+If you find issues in the example source, please contact
+pmartz@opengldistilled.com. I'll ensure that major issues are resolved
+and the example source updated accordingly.
+
+
+HISTORY
+
+Version 01, date TBD
+ - Added changes from Matt Gadda for the Apple-specific portion
+   of the Platform example. Resolves Issue0003.
+ - Incorporated changes from Bob Kuehne for Intel Mac.
+ - Misc minor code and comment changes.
+
+Version 00, 5 March 2006
+ - First release.

@@ -1,0 +1,284 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "CubeMap"=.\CubeMap.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DepthMapShadows"=.\DepthMapShadows.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DepthOffset"=.\DepthOffset.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Extensions"=.\Extensions.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Materials"=.\Materials.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "OGLD"=.\OGLD.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Picking"=.\Picking.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PixelRectangles"=.\PixelRectangles.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Platform"=.\Platform.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ProjectedShadows"=.\ProjectedShadows.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SecondaryColor"=.\SecondaryColor.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SimpleExample"=.\SimpleExample.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SimpleLighting"=.\SimpleLighting.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SimpleTextureMapping"=.\SimpleTextureMapping.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TextureMapping"=.\TextureMapping.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Transformation"=.\Transformation.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "VertexArray"=.\VertexArray.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Viewing"=.\Viewing.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OGLD
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
