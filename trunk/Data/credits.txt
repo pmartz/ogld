@@ -1,0 +1,15 @@
+AphrodesiaHeads.tif
+  Image used courtesy of Dean Randazzo.
+
+earth.tif
+  This image is owned by NASA and was developed by the Earth Observatory team (http://earthobservatory.nasa.gov/).
+
+moon.tif
+  Courtesy NASA/JPL-Caltech.
+
+sun.tif
+  Courtesy of SOHO/Extreme Ultraviolet Imaging Telescope (EIT) consortium. SOHO is a project of international cooperation between ESA and NASA. 
+
+teton.dat
+  Elevation and imagery data used courtesy of SimAuthor, Inc.
+

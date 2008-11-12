@@ -1,0 +1,33 @@
+To report an issue with the example source code, email
+pmartz@opengldistilled.com.
+
+
+Issue000: ogld::Plane, incorrect rendering on ATI
+
+5 March 2006: The Plane15 class is known to produce incorrect results
+using an ATI Radeon 9600, driver version 1.4.18, on a G4 Power
+Macintosh with Mac OS X 10.4.4. See the code comments in
+OGLD/OGLDPlane.cpp for a workaround.
+
+
+Issue001: DepthMapShadows, incorrect rendering on Mesa
+
+5 March 2006: This example is known to render incorrectly using the
+Mesa v6.4.1 software renderer.
+
+
+Issue002: DepthMapShadows, incorrect rendering on NVIDIA
+
+5 March 2006: This example is known to render incorrectly using a
+NVIDIA GeForce 6800, driver version 81.98, on a Pentium 4 HT system
+with Windows XP.However, the example renders correctly when the
+driver is reverted to version 78.01.
+
+
+Issue003: Platform, bus error on Apple
+
+5 March 2006: Platform example is currently incomplete on the Apple
+and results in a bus error. My access to Apple development platforms
+is limited, but I hope to resolve this issue soon.
+
+13 April 2006: CLOSED. Thanks to Matt Gadda for his fixes.
