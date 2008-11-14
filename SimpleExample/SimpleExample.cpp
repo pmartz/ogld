@@ -89,7 +89,7 @@ init()
     char dummySep;
     verStream >> major >> dummySep >> minor;
 
-    const bool useVertexArrays = ( (major >= 1) && (minor >= 1) );
+    const bool useVertexArrays = ( (major >= 2) || ( (major == 1) && (minor >= 1) ) );
 
     const GLfloat data[] = {
         -1.f, -1.f, 0.f,
