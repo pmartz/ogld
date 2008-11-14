@@ -5,7 +5,13 @@ and the example source updated accordingly.
 
 HISTORY
 
-Version 01, date TBD
+svn revision 2, 13 November 2008
+ - After a long hiatus, finally blowing the dust off these examples.
+   Now available via Google Code SVN repository.
+ - Fixed version check in SimpleExample.cpp. Thanks to Craig Harrison
+   and others for reporting this.
+
+Version 01, May 2006
  - Added changes from Matt Gadda for the Apple-specific portion
    of the Platform example. Resolves Issue0003.
  - Incorporated changes from Bob Kuehne for Intel Mac.
