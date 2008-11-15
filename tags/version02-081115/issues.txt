@@ -1,0 +1,7 @@
+Note: As of 15 November 2008, all issue tracking has
+moved to the Google Code repository.
+
+To report an issue with the example source code, please
+visit:
+
+  http://www.code.google.com/p/ogld

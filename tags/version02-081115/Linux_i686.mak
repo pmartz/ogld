@@ -1,0 +1,4 @@
+X_OBJEXT=.o
+X_LIBEXT=.a
+X_EXEEXT=
+

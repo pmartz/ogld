@@ -1,0 +1,17 @@
+CubeMap\Release\CubeMap.exe
+DepthMapShadows\Release\DepthMapShadows.exe
+DepthOffset\Release\DepthOffset.exe
+Extensions\Release\Extensions.exe
+Materials\Release\Materials.exe
+Picking\Release\Picking.exe
+PixelRectangles\Release\PixelRectangles.exe
+Platform\Release\Platform.exe
+ProjectedShadows\Release\ProjectedShadows.exe
+SecondaryColor\Release\SecondaryColor.exe
+SimpleExample\Release\SimpleExample.exe
+SimpleLighting\Release\SimpleLighting.exe
+SimpleTextureMapping\Release\SimpleTextureMapping.exe
+TextureMapping\Release\TextureMapping.exe
+Transformation\Release\Transformation.exe
+VertexArray\Release\VertexArray.exe
+Viewing\Release\Viewing.exe
