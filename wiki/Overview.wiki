@@ -1,5 +1,3 @@
-#summary Overview of the OpenGL Distilled Example SOurce Code
+#summary Information about the OpenGL Distilled Example SOurce Code
 
-= Overview =
-
-The code has remained mostly unchanged since the book's release in 2006, but will be updated during late 2008 to early 2009 to fix some reported issues and ease the build process.
+As of November 2008, I've moved the source code to this Google Code site. The code has remained essentially unchanged since 2006, but is being updated during late 2008 to address several issues and incorporate many user-suggested changes.
