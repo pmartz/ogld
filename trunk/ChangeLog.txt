@@ -5,6 +5,11 @@ and the example source updated accordingly.
 
 HISTORY
 
+Version 02, 15 November 2008
+ - Tagged this release, which includes all recent changes
+   made since moving to Google Code.
+ - Posted a ZIP of the repository.
+
 r14, 15 November 2008
  - Removed unnecessary semicolons from various locations.
 
