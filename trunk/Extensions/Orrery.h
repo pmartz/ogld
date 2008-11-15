@@ -18,7 +18,7 @@
 namespace ogld
 {
     class Pixels;
-};
+}
 
 
 class Orrery

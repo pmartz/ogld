@@ -21,7 +21,7 @@
 namespace ogld
 {
     class Texture;
-};
+}
 
 
 class Terrain

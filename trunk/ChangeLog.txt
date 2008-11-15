@@ -5,6 +5,9 @@ and the example source updated accordingly.
 
 HISTORY
 
+r14, 15 November 2008
+ - Removed unnecessary semicolons from various locations.
+
 r13, 15 November 2008
  - Fix several memory leaks in the Platform.cpp example.
 

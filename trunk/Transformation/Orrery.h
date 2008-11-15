@@ -19,7 +19,7 @@ namespace ogld
 {
     class Cylinder;
     class Sphere;
-};
+}
 
 
 class Orrery

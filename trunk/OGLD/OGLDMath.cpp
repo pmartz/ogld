@@ -208,7 +208,7 @@ Vec3d::cross( const Vec3d& a, const Vec3d& b )
             a._v[2]*b._v[0] - a._v[0]*b._v[2],
             a._v[0]*b._v[1] - a._v[1]*b._v[0] );
     return result;
-};
+}
 
 
 }
