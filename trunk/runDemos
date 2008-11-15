@@ -1,0 +1,21 @@
+#!/bin/sh
+
+dir=./`uname -ms | sed -e s"/ /_/g"`
+
+${dir}/CubeMap/CubeMap
+${dir}/DepthMapShadows/DepthMapShadows
+${dir}/DepthOffset/DepthOffset
+${dir}/Extensions/Extensions
+${dir}/Materials/Materials
+${dir}/Picking/Picking
+${dir}/PixelRectangles/PixelRectangles
+${dir}/Platform/Platform
+${dir}/ProjectedShadows/ProjectedShadows
+${dir}/SecondaryColor/SecondaryColor
+${dir}/SimpleExample/SimpleExample
+${dir}/SimpleLighting/SimpleLighting
+${dir}/SimpleTextureMapping/SimpleTextureMapping
+${dir}/TextureMapping/TextureMapping
+${dir}/Transformation/Transformation
+${dir}/VertexArray/VertexArray
+${dir}/Viewing/Viewing
