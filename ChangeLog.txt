@@ -5,11 +5,17 @@ and the example source updated accordingly.
 
 HISTORY
 
-svn revision 2, 13 November 2008
- - After a long hiatus, finally blowing the dust off these examples.
-   Now available via Google Code SVN repository.
+r4, 15 November 2008
+ - Added build system support for 64-bit Linux.
+ - Added runDemos script to replace runDemosMac,
+   runDemosLinux, and runDemosCygwin.
+
+r3, 13 November 2008
  - Fixed version check in SimpleExample.cpp. Thanks to Craig Harrison
    and others for reporting this.
+
+Two older versions were made available prior to the move to
+the Google Code repository:
 
 Version 01, May 2006
  - Added changes from Matt Gadda for the Apple-specific portion
