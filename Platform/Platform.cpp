@@ -74,11 +74,8 @@ ogld::Cylinder* cyl = NULL;
 static void
 display()
 {
-    // TBD need platform independent "startup" and
-    //   "shutdown" routines, but they must get called
-    //   once there is a current context.
-    // This is currently a memory leak.
     if (!cyl)
+        // Create cylinder if it doesn't already exist.
         cyl = ogld::Cylinder::create();
 
 
@@ -171,6 +168,8 @@ windowEvtHndlr (EventHandlerCallRef myHandler, EventRef event, void* userData)
             break;
 
         case kEventWindowClose:
+            delete cyl;
+
             aglSetCurrentContext( NULL );
             aglDestroyContext( ctx );
             exit(0);
@@ -253,7 +252,7 @@ main( int argc, char *argv[] )
 
 
 void
-glx13Init( Display* dpy, GLXWindow* win, GLXContext* ctx )
+glx13Init( Display* dpy, Window* xwin, GLXWindow* win, GLXContext* ctx )
 {
     int nelements;
 
@@ -272,9 +271,10 @@ glx13Init( Display* dpy, GLXWindow* win, GLXContext* ctx )
     swa.colormap = XCreateColormap( dpy, root, vi->visual, AllocNone );
     swa.border_pixel = 0;
     swa.event_mask = StructureNotifyMask;
-    Window xwin = XCreateWindow( dpy, root, 0, 0, 300, 300, 0,
+    *xwin = XCreateWindow( dpy, root, 0, 0, 300, 300, 0,
             vi->depth, InputOutput, vi->visual,
             CWBorderPixel | CWColormap | CWEventMask, &swa );
+    XFree( vi );
 
     // Set the title in the window manager
     const char* title = "Simple GLX Example";
@@ -287,20 +287,20 @@ glx13Init( Display* dpy, GLXWindow* win, GLXContext* ctx )
     XWMHints* wmHints = XAllocWMHints();
     wmHints->initial_state = NormalState;
     wmHints->flags = StateHint;
-    XSetWMProperties( dpy, xwin, &xText, &xText,
+    XSetWMProperties( dpy, *xwin, &xText, &xText,
         NULL, 0, NULL, wmHints, NULL );
     XFree( wmHints );
     Atom atom;
     atom = XInternAtom( dpy, "WM_DELETE_WINDOW", False );
-    XSetWMProtocols( dpy, xwin, &atom, 1 );
+    XSetWMProtocols( dpy, *xwin, &atom, 1 );
 
     // Show the window
-    XMapWindow( dpy, xwin );
+    XMapWindow( dpy, *xwin );
 
 
     // Create a GLX window using the same FBConfig that we used for the
     //   the GLX context.
-    *win = glXCreateWindow( dpy, fbc[0], xwin, 0 );
+    *win = glXCreateWindow( dpy, fbc[0], *xwin, 0 );
 
     XFree( fbc );
 }
@@ -322,13 +322,14 @@ main( int argc, char **argv )
     if (minor < 3)
         exit( 1 );
 
+    Window xwin;
     GLXWindow win;
     GLXContext ctx;
-    glx13Init( dpy, &win, &ctx );
+    glx13Init( dpy, &xwin, &win, &ctx );
     glXMakeContextCurrent( dpy, win, win, ctx );
 
 
-    XSelectInput( dpy, win, ExposureMask |
+    XSelectInput( dpy, xwin, ExposureMask |
             KeyPressMask | StructureNotifyMask );
 
     bool done( false );
@@ -354,7 +355,13 @@ main( int argc, char **argv )
         glXSwapBuffers( dpy, win );
     }
 
+    glXMakeContextCurrent( dpy, None, None, 0 );
+    glXDestroyContext( dpy, ctx );
+    glXDestroyWindow( dpy, win );
+    XDestroyWindow( dpy, xwin );
     XCloseDisplay( dpy );
+    delete cyl;
+    delete ogld::OGLDif::instance();
 }
 
 
@@ -480,6 +487,8 @@ wndProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
         
     case WM_DESTROY:
     {
+        delete cyl;
+
         assert( hRC );
         wglDeleteContext( hRC );
         hRC = NULL;
