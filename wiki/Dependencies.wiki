@@ -1,4 +1,4 @@
-#summary Other tools, librarues, and files needed to build the examples.
+#summary Other tools, libraries, and files needed to build the examples.
 
 = GNU Make 3.80 =
 
