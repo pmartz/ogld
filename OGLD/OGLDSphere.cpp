@@ -22,6 +22,7 @@
 #include <math.h>
 #include <map>
 #include <assert.h>
+#include <string.h>
 
 
 

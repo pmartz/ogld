@@ -17,6 +17,7 @@
 #include "OGLDCubeMap.h"
 #include "OGLDMath.h"
 #include <string>
+#include <string.h>
 #include <exception>
 #include <assert.h>
 

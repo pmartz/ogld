@@ -16,6 +16,7 @@
 #include "OGLDPixelBuffer.h"
 #include "tiffio.h"
 #include <string>
+#include <string.h>
 #include <assert.h>
 
 
