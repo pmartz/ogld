@@ -12,6 +12,7 @@
 
 #include "OGLDPlatformGL.h"
 #include "OGLDPlatformGLUT.h"
+#include <stdlib.h>
 #include <string>
 #include <sstream>
 #include <assert.h>

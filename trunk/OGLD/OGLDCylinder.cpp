@@ -455,13 +455,13 @@ Cylinder12::storeData()
     glEnableClientState( GL_TEXTURE_COORD_ARRAY );
     glTexCoordPointer( 2, GL_FLOAT, 0, _texCoords );
 
-    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx, _numVerts,
+    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx-1, _numVerts,
             GL_UNSIGNED_SHORT, _indices );
     if (_drawCap1)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, _cap1Start );
     if (_drawCap2)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, _cap2Start );
 
     glPopClientAttrib();
@@ -521,13 +521,13 @@ Cylinder13::storeData()
     }
 
 
-    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx, _numVerts,
+    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx-1, _numVerts,
             GL_UNSIGNED_SHORT, _indices );
     if (_drawCap1)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, _cap1Start );
     if (_drawCap2)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, _cap2Start );
 
     glPopClientAttrib();
@@ -598,13 +598,13 @@ Cylinder15::draw()
     }
 
     glBindBuffer( GL_ELEMENT_ARRAY_BUFFER, _vbo[_idxIdx] );
-    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx, _numVerts,
+    glDrawRangeElements( GL_QUAD_STRIP, _idxStart, _cap1Idx-1, _numVerts,
             GL_UNSIGNED_SHORT, bufferObjectPtr( 0 ) );
     if (_drawCap1)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap1Idx, _cap2Idx-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, bufferObjectPtr((_cap1Start-_indices)*sizeof(GLushort)) );
     if (_drawCap2)
-        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd, _numCapVerts,
+        glDrawRangeElements( GL_TRIANGLE_FAN, _cap2Idx, _idxEnd-1, _numCapVerts,
                 GL_UNSIGNED_SHORT, bufferObjectPtr((_cap2Start-_indices)*sizeof(GLushort)) );
 
     glBindBuffer( GL_ARRAY_BUFFER, 0 );

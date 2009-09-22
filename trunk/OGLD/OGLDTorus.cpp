@@ -236,7 +236,7 @@ Torus::buildData()
     GLushort* indexPtr = _indices;
 
     _idxStart = 0;
-    _idxEnd = _numVerts;
+    _idxEnd = _numVerts-1;
 
     for (i=0; i<_majApprox; i++)
     {

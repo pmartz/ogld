@@ -15,6 +15,7 @@
 #include "OGLDif.h"
 #include "OGLDMath.h"
 #include <assert.h>
+#include <string.h>
 
 
 

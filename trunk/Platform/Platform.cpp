@@ -45,7 +45,7 @@ extern "C" {
 
 #include "OGLDif.h"
 #include "OGLDCylinder.h"
-//#include <string>
+#include <string.h>
 #include <stdlib.h>
 #include <assert.h>
 
