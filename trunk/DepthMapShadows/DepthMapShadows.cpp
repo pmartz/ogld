@@ -78,7 +78,7 @@ drawScene( bool createShadows )
     if (createShadows)
     {
         // When creating a depth map shadow, the goal is to obtain the
-        //   contents of the depth biffer. As a result, lighting is
+        //   contents of the depth buffer. As a result, lighting is
         //   irrelevant, and disabling it could improve performance.
         glDisable( GL_LIGHT0 );
 
