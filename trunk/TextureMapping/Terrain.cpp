@@ -15,6 +15,7 @@
 #include "OGLDif.h"
 #include "Terrain.h"
 #include <assert.h>
+#include <stdio.h>
 
 // Header files for ntohl and ntohs vary by platform
 #if defined( __CYGWIN__ ) || defined( GLX )
