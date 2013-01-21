@@ -6,4 +6,4 @@ $($(X_MODULE)_OUTPUT)/$(BINARY).a: $($(X_MODULE)_OBJS)
 	ranlib '$@'
 
 $($(X_MODULE)_OUTPUT)/$(BINARY)$(X_EXEEXT): $($(X_MODULE)_OBJS)
-	$(LINK.cpp) -L$(X_OUTARCH)/OGLD $^ -lOGLD -ltiff -lglut -lGLU -lGL -o '$@'
+	$(LINK.cpp) -L$(X_OUTARCH)/OGLD $^ -lOGLD -ltiff -lglut -lGLU -lGL -ldl -lX11 -o '$@'
