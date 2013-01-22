@@ -1,0 +1,4 @@
+Thanks to Eric Wing for porting the Platform example from
+AGL to NSOpenGL so that it runs on current OSX. Thanks to
+Eric Wing and Jay Bromley for Xcode project file development
+and testing on OSX.
