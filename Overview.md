@@ -1,0 +1,1 @@
+As of November 2008, I've moved the source code to this Google Code site. The code has remained essentially unchanged since 2006, but is being updated during late 2008 to address several issues and incorporate many user-suggested changes.
